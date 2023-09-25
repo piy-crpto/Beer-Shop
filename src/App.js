@@ -14,8 +14,12 @@ function App() {
   }, []);
 
   return (
-    <div className="container">
-      <h1 className='header'>Beer App By Piyush Yadav</h1>
+     <div className="container">
+      <div className="heading">
+      <h1 className='header'>Beer App  </h1>
+      <h1 className='name'>Shopy-Tech</h1>
+      </div>
+      
       {/* <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} /> */}
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <BeerList beers={beers} searchTerm={searchTerm} />
