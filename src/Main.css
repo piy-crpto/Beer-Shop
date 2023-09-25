@@ -6,6 +6,21 @@
    box-sizing: border-box;
    width: 97vw;
 }
+.heading
+{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+
+}
+
+.heading span
+{
+   color : gold;
+   font-weight: 1000;
+   
+}
 .header
 {
    display: flex;
@@ -15,3 +30,24 @@
    font-weight: 1000;
   font-size: xx-large;
 }
+
+
+
+@media only screen and (max-width: 480px) {
+    .heading
+    {
+      font-size: large;
+    }
+
+
+    
+    .heading {
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+   
+    }
+  
+ 
+  
+ }
