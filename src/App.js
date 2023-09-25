@@ -17,7 +17,7 @@ function App() {
      <div className="container">
       <div className="heading">
       <h1 className='header'>Beer App  </h1>
-      <h1 className='name'>Shopy-Tech</h1>
+      <h1 className='name'>Piyush-Tech</h1>
       </div>
       
       {/* <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} /> */}
