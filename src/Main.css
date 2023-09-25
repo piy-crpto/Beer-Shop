@@ -1,0 +1,17 @@
+.container
+{
+   margin :0;
+   padding: 0;
+   font-size: 62.5%;
+   box-sizing: border-box;
+   width: 97vw;
+}
+.header
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color:rgb(218,165,32);
+   font-weight: 1000;
+  font-size: xx-large;
+}

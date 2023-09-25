@@ -1,0 +1,24 @@
+.box-container{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   align-items: center;
+ 
+}
+
+
+@media only screen and (max-width: 480px) {
+    /* body {
+      background-color:yellow;
+    } */
+   
+    .box-container {
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+   
+    }
+  
+   
+  }

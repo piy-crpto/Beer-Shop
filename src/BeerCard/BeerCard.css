@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+*{
+  font-family: 'Nunito', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none; border:none;
+  text-transform: capitalize;
+  /* transition: all .2s linear; */
+}
+
+
+:root{
+  --green:#27ae60;
+  --black:#192a56;
+  --light-color:#666;
+  --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+
+
+ .box{
+  /* background: #fff;
+  border:.1rem solid rgba(0,0,0,.2);
+  border-radius: .5rem;
+  box-shadow: var(--box-shadow);     */
+  width: 250px;
+  margin-top: 3rem;
+  /* padding:5px; */
+ /* height: 500px; */
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  
+   transition: 0.4s; 
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+  min-height: 650px;
+
+}
+
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+ .box .image img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin: 10px;
+  width: 150px;
+height: 230px;
+object-fit: contain;
+}
+
+ .box .image .fa-heart{
+  position: absolute;
+  top:2.5rem; right: 2.5rem;
+  height: 5rem;
+  width: 5rem;
+  line-height: .7rem;
+  text-align: center;
+  font-size: .2rem;
+  background: #fff;
+  border-radius: 50%;
+  color:var(--black);
+}
+
+.box .image .fa-heart:hover{
+  background-color: var(--green);
+  color:#fff;
+}
+
+ .box .content{
+  padding:1rem;
+  padding-top: 0;
+}
+
+ .box .content .stars{
+  padding-bottom: .1rem;
+}
+
+ .box .content .stars i{
+ font-size: 1.5rem;
+ color:var(--green);
+}
+ .box .content h3{
+  color:var(--black);
+  font-size: 1.5rem;
+}
+
+ .box .content p{
+  color:var(--light-color);
+  font-size: 1.1rem;
+  padding:.5rem 0;
+  line-height:1.3rem;
+}
+
+ .box .content .price{
+  color:var(--green);
+  margin-left: 1rem;
+  font-size: 1.3rem;
+}
+
+  
+ 
+ 
+
+
+
+
+
+  

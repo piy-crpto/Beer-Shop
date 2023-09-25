@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import SearchBar from './SearchBar/SearchBar';
+import BeerList from './BeerList/BeerList';
+import './Main.css';
 
 function App() {
+  const [beers, setBeers] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
+
+  useEffect(() => {
+    fetch('https://api.punkapi.com/v2/beers')
+      .then((response) => response.json())
+      .then((data) => setBeers(data));
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1 className='header'>Beer App</h1>
+      {/* <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} /> */}
+      <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+      <BeerList beers={beers} searchTerm={searchTerm} />
+      
     </div>
   );
 }
